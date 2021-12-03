@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>ドットインストール</title>
+    <meta name="description" content="プログラミング学習サービスの「ドットインストール」です">
+    <link rel="icon" href="favicon.ico">
+  </head>
+  <body>
+    <header>    
+      <img src="img/logo.png" alt="logo" width="300" height="50">
+    </header>
+    <main>
+
+      
+      
+      <!-- メモ　ソースをみるとコメントアウトが見れるので、機密情報は書かない -->
+      <h1 id="about">ドットインストール</h1>
+      <p>プログラミング学習サービスの「<a href="https://dotinstall.com/lessons/basic_html_tags_v2/51015" target="_blank">ドットインストール</a>」です！<br>
+        「<a href="members.html">メンバー紹介</a>」と「<a href="lessons/index.html">レッスン紹介</a>」もご覧ください。</p>
+        
+        <ul>
+          <li><a href="#about">このサービスについて</a></li>
+          <li><a href="#history">沿革へ</a></li>
+    </ul>
+    
+    <h1>このサービスについて</h1>
+      <p><strong>練習用の</strong>プログラムです</p>
+
+      <blockquote>
+        <p>HTMLはこれから学ぶべきスキルです！</p>
+      </blockquote>
+      
+      <hr>
+      
+      <p>
+        入れるとて<br>
+        溺れるなかれ<br>
+        万個ハメ
+      </p>
+
+      <p>&lt;br&gt;タグの使い方</p>
+      
+      
+      <section>
+        
+        <h2 id="about">主な特徴</h2>
+        <p>特にないです</p>
+        <nav>
+          <ul>
+            <li>sugoi</li>
+            <li>yabai</li>
+            <li>tuyoi</li>
+          </ul>
+        </nav>
+      </section>
+        
+    <h2>使い方</h2>
+      <p>特に使い道も</p>
+      
+      <ol>
+        <li>動画を見る</li>
+        <li>コードを書く</li>
+        <li>コードを改造する</li>
+      </ol>
+      
+      <h2>よく聞かれる質問</h2>
+      <p>Q：どう使うの？　A：知らんな</p>
+      
+      <dl>
+        <dt>質問A</dt>
+        <dd>回答A</dd>
+        <dt>質問B</dt>
+        <dd>回答B</dd>
+      </dl>
+      <section>
+        
+      <h1 id="history">沿革</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>年</th>
+            <th>出来事</th>
+          </tr>
+          <th>
+            
+          </th>
+        </thead>
+        
+        <tbody>
+          <tr>
+            <td>2014</td>
+            <td>会社設立</td>
+          </tr>
+          <tr>
+            <td>2016</td>
+            <td>サイトリニューアル</td>
+          </tr>
+        </tbody>
+        
+      </table>
+    </section>
+      
+      <aside>
+    <h2>広告</h2>
+    <p>広告です。</p>
+  </aside>
+</main>
+<section>
+  <h1>記事一覧</h1>
+
+  <article>
+  <h2><span style="color: red">記</span>事のタイトル</h2>
+  <div style="background: silver;">
+    <p>お知らせです。お知らせです。</p>
+    <footer>投稿日： <time>2019-01-31</time> by @taguchi</footer>
+  </div>
+  </article>
+  
+  <article>
+  <h2>記事のタイトル2  </h2>
+  <p>お知らせです。お知らせです。</p>
+  <footer>投稿日： <time>2019-01-31</time> by @taguchi</footer>
+  </article>
+  
+  
+</section>
+
+
+  <footer>
+    <p><a href="#top">トップへ戻る</a></p>
+  </footer>
+
+<label for="name">苗字</label>
+<input type="text" placeholder="taguchi" id="name">
+<!-- 上のfor="name"のおかげで、ラベルタグの文字をクリック＝同じIDのエリアに入力が可能になる -->
+
+
+<label>名前<input type="text" placeholder="taguchi"></label>
+
+<label>挨拶</label>
+<input type="text" value="hello">
+
+<input type="password">
+
+<label>メッセージ</label>
+<textarea>uuu</textarea>
+
+<label>好きな色</label>
+<select id="color">
+<!-- <select id="color" size="4" multiple> -->
+  <option>色1</option>
+  <option>色2</option>
+  <option>色3</option>
+  <option selected>色4</option>
+  <option>色5</option>
+  <option>色6</option>
+</select>
+
+<fieldset>
+  <legend>お使いのスマホ（複数選択可能）</legend>
+    <label><input type="checkbox">iphone</label>
+    <label><input type="checkbox" checked>Android</label>
+    <label><input type="checkbox">その他</label>
+</fieldset>
+
+<fieldset>
+  <legend>一番好きなスマホ（一つだけ選択可能）</legend>
+    <label><input type="radio" name="phone">iphone</label>
+    <label><input type="radio" name="phone" checked>Android</label>
+    <label><input type="radio" name="phone">その他</label>
+</fieldset>
+
+<p><input type="color"></p>
+<p><input type="date"></p>
+<p><input type="number"></p>
+<p><input type="range"></p>
+
+
+<input type="button" value="OK">
+<button>OK</button>
+<button disabled>OK</button>
+
+<form action="process.php" method="post">
+  <label>担当者名 <input type="text" name="username"></label>
+  <label>タスク <input type="text" name="task"></label>
+  <button>追加</button>
+</form>
+
+
+</body>
+
+
+</html>
+
+
+

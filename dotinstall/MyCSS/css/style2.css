@@ -1,0 +1,103 @@
+.info {
+  color: skyblue;
+}
+
+#title {
+  font-weight: normal;
+  color: pink;
+}
+
+* {
+  font-size: 12px;
+}
+
+[target] {
+  font-weight: bold;
+}
+[href="#top"] {
+  font-size: 24px;
+}
+[href^="https"] {
+  font-size: 32px;
+}
+/* [href$="dotinstall"] { */
+[href*="com"] {
+  font-size: 40px;
+}
+
+/* 
+要素の指定
+[attr="value"]完全一致
+[attr^="value"]前方一致
+[attr$="value"]後方一致
+[attr*="value"]部分一致
+*/
+
+/* 
+h1, .info{}いくつまででも指定可能。それぞれに適用可能
+h1.info{}h1かつ.infoのもののみ適用
+main > h1 {}mainの直下のh1に適用
+p + p{}p要素の後のp要素
+*/
+
+h1::before,
+h2::before{
+  content: '- ';
+}
+h1::after,
+h2::after{
+  /* content: ' -'; */
+  content: attr(data-subtitle);
+}
+
+.btn {
+  width: 100px;
+  background: skyblue;
+  text-align: center;
+  padding: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+main > :nth-child(odd) {
+  background: red;
+}
+main > :nth-child(even) {
+  background: blue;
+}
+
+main > :nth-child(3) {
+  background: pink;
+}
+main > :nth-child(4n) {
+  background: green;
+}
+main > :first-child {
+  background: whitesmoke;
+}
+main > :last-child {
+  background: gray;
+}
+
+main > h2:first-of-type {
+  background: greenyellow;
+}
+main > h2:nth-of-type(2) {
+  background: yellow;
+}
+
+li:empty {
+  background: skyblue;
+}
+li:not(:empty) {
+  background: greenyellow;
+}
+/* スペースや改行は、この場合のemptyに含まれない */
+
+h1 { color: red !important;}
+h1#main.box { color: blue;}
+section > #main.title { color: blue;}
+section#about > h1 { color: pink;}
